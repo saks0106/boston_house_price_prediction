@@ -38,3 +38,10 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+"""
+After this create a procfile for heroku. When entire app is started, what commands needs to run.  We use gunicorn which is purest python  http server for web apps and allows multiple process simultaneously
+
+web: gunicorn app:app. here app is our app.py file
+requirements also add gunicorn  
+"""
